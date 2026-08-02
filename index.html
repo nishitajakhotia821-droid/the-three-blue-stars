@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="The Three Blue Stars - An anime-inspired friendship story of Nishita, Govind, and Harsh.">
+
+    <meta name="theme-color" content="#050b2e">
+
+    <!-- Open Graph -->
+
+    <meta property="og:title" content="The Three Blue Stars">
+
+    <meta property="og:description"
+        content="A friendship journey written among the stars.">
+
+    <meta property="og:type" content="website">
+
+    <title>The Three Blue Stars</title>
+
+    <!-- Styles -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <!-- AOS -->
+
+    <link rel="stylesheet"
+        href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- LOADER -->
+    <!-- ========================= -->
+
+    <div id="loader">
+
+        <div class="loader-content">
+
+            <div class="planet"></div>
+
+            <h1>The Three Blue Stars</h1>
+
+            <p>Preparing your memories...</p>
+
+        </div>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- BACKGROUND -->
+    <!-- ========================= -->
+
+    <div id="stars"></div>
+
+    <div id="stars2"></div>
+
+    <div id="stars3"></div>
+
+    <div class="gradient"></div>
+
+    <!-- ========================= -->
+    <!-- MUSIC -->
+    <!-- ========================= -->
+
+    <audio id="bgMusic" loop>
+
+        <source src="assets/music/music.mp3" type="audio/mpeg">
+
+    </audio>
+
+    <button id="musicBtn">
+
+        <i class="fa-solid fa-music"></i>
+
+    </button>
+
+    <main>
+
+        <!-- ========================= -->
+        <!-- HERO -->
+        <!-- ========================= -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <h3 data-aos="fade-up">
+
+                    AN ANIME STORY
+
+                </h3>
+
+                <h1 data-aos="zoom-in">
+
+                    THE THREE
+
+                    <br>
+
+                    BLUE STARS
+
+                </h1>
+
+                <h2 data-aos="fade-up">
+
+                    Nishita 💙 Govind 💙 Harsh
+
+                </h2>
+
+                <p data-aos="fade-up">
+
+                    Some friendships don't need daily conversations.
+
+                    <br><br>
+
+                    They simply stay...
+
+                    even when life changes.
+
+                </p>
+
+                <button id="startJourney">
+
+                    Begin Our Journey
+
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- ========================= -->
+        <!-- SCROLL -->
+        <!-- ========================= -->
+
+        <div class="scroll">
+
+            <span></span>
+
+        </div>
+
+        <!-- ========================= -->
+        <!-- CHAPTER 1 PREVIEW -->
+        <!-- ========================= -->
+
+        <section class="chapter">
+
+            <div class="chapterTitle" data-aos="fade-up">
+
+                CHAPTER 01
+
+            </div>
+
+            <h1 data-aos="zoom-in">
+
+                CLASS VI
+
+            </h1>
+
+            <h2 data-aos="fade-up">
+
+                Where Everything Began
+
+            </h2>
+
+            <div class="story">
+
+                <p>
+
+                    Every unforgettable story begins somewhere.
+
+                    Ours didn't begin with something extraordinary.
+
+                    It began inside one ordinary classroom,
+                    where three students slowly became
+                    lifelong friends.
+
+                </p>
+
+                <p>
+
+                    We shared notebooks.
+
+                    We laughed over silly jokes.
+
+                    We celebrated festivals.
+
+                    We helped each other during exams.
+
+                    We made memories without realizing
+                    they would become the best days of our lives.
+
+                </p>
+
+                <p>
+
+                    Looking back now...
+
+                    those ordinary school days became
+                    the most extraordinary chapter of our story.
+
+                </p>
+
+            </div>
+
+        </section>
+
+                <!-- ========================= -->
+        <!-- FRIENDSHIP QUOTE -->
+        <!-- ========================= -->
+
+        <section class="quote">
+
+            <h1 data-aos="zoom-in">
+
+                "Some people enter our lives for a season...
+
+                You two became my home."
+
+            </h1>
+
+        </section>
+
+        <!-- ========================= -->
+        <!-- JOURNEY CONTINUES -->
+        <!-- ========================= -->
+
+        <section class="next">
+
+            <h2>
+
+                Our story has only just begun...
+
+            </h2>
+
+            <p style="max-width:650px;text-align:center;margin-bottom:35px;color:#dbeafe;line-height:1.8;">
+
+                Every chapter ahead holds another memory,
+                another laugh,
+                another promise,
+                and another reminder that true friendship
+                never fades with time.
+
+            </p>
+
+            <a href="pages/chapter1.html">
+
+                <button type="button">
+
+                    Begin Chapter 1 →
+
+                </button>
+
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- ========================= -->
+    <!-- CURSOR -->
+    <!-- ========================= -->
+
+    <div class="cursor"></div>
+
+    <!-- ========================= -->
+    <!-- SCRIPTS -->
+    <!-- ========================= -->
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+
+        AOS.init({
+
+            duration: 1200,
+            once: true,
+            offset: 80
+
+        });
+
+        document.getElementById("startJourney").addEventListener("click", function () {
+
+            window.location.href = "pages/chapter1.html";
+
+        });
+
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
