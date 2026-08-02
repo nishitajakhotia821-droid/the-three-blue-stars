@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Music</title>
+</head>
+
+
+<body>
+
+
+<audio id="bgMusic" loop>
+
+<source src="music.mp3" type="audio/mp3">
+
+</audio>
+
+
+
+<script>
+
+
+const audio = document.getElementById("bgMusic");
+
+
+// Restore previous song position
+
+let savedTime = localStorage.getItem("musicTime");
+
+
+if(savedTime){
+
+    audio.currentTime = parseFloat(savedTime);
+
+}
+
+
+
+// Restore volume
+
+audio.volume = 0.4;
+
+
+
+// Try playing music
+
+audio.play().catch(()=>{
+
+    console.log("Waiting for user interaction");
+
+});
+
+
+
+
+// Save song progress
+
+setInterval(()=>{
+
+
+    localStorage.setItem(
+        "musicTime",
+        audio.currentTime
+    );
+
+
+},1000);
+
+
+
+
+</script>
+
+
+</body>
+
+</html>

@@ -3,244 +3,195 @@
 
 <head>
 
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 2 - School Memories</title>
 
-    <meta name="description"
-        content="Chapter 2 - Side Quests. Every friendship is made of unforgettable adventures, laughter, and memories.">
-
-    <title>Chapter 2 | Side Quests | The Three Blue Stars</title>
-
-    <link rel="stylesheet" href="../style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
 </head>
 
+
 <body>
+    <iframe src="music.html" style="display:none;"></iframe>
 
-<main class="chapter-page">
 
-    <nav class="back-home" aria-label="Back Navigation">
+<div class="stars"></div>
+<div class="stars2"></div>
+<div class="overlay"></div>
 
-        <a href="../index.html">
-            ← Return to Galaxy
-        </a>
 
-    </nav>
 
-    <header class="chapterHero">
+<audio id="music" loop>
 
-        <h3>CHAPTER 02</h3>
+<source src="music.mp3" type="audio/mp3">
 
-        <h1>SIDE QUESTS</h1>
+</audio>
 
-        <h2>Every Memory Was an Adventure</h2>
 
-    </header>
 
-    <section class="missionContainer">
+<div class="container">
 
-        <article class="missionCard">
 
-            <div class="level">MISSION 01</div>
+<h1 class="title">
 
-            <h2>Our First Laugh</h2>
+Chapter 2
 
-            <p>
+</h1>
 
-                Every friendship begins with a smile.
 
-                Maybe it was a silly joke, a funny classroom moment,
-                or something that still makes us laugh today.
 
-                That first laugh became the beginning of countless happy memories.
+<h2 class="subtitle">
 
-            </p>
+The Golden School Days
 
-            <button class="missionBtn">
+</h2>
 
-                Mission Complete ✓
 
-            </button>
 
-        </article>
 
-        <article class="missionCard">
+<p class="story" id="text"></p>
 
-            <div class="level">MISSION 02</div>
 
-            <h2>Our First Fight</h2>
 
-            <p>
+<br><br>
 
-                No friendship is perfect.
 
-                We disagreed.
 
-                We argued.
+<a href="chapter3.html">
 
-                But somehow every little fight only made our bond stronger.
+<button>
 
-                Looking back now, those moments make us smile.
+Continue →
 
-            </p>
+</button>
 
-            <button class="missionBtn">
+</a>
 
-                Mission Complete ✓
 
-            </button>
 
-        </article>
+</div>
 
-        <article class="missionCard">
 
-            <div class="level">MISSION 03</div>
 
-            <h2>The Secret Mission</h2>
 
-            <p>
 
-                Real friendship begins when trust is shared.
+<script>
 
-                We learned that no matter what happened,
-                we could always count on each other.
 
-                Some memories are too special to explain—
-                they simply stay in our hearts.
+const story = `
 
-            </p>
+Days turned into years...
 
-            <button class="missionBtn">
+Three seats.
 
-                Mission Complete ✓
+Three smiles.
 
-            </button>
+Three different minds.
 
-        </article>
+From sharing lunch boxes,
 
-        <article class="missionCard">
+laughing during classes,
 
-            <div class="level">MISSION 04</div>
+fighting over silly things,
 
-            <h2>School Adventures</h2>
+and creating memories that only we understand.
 
-            <p>
+Those small moments became the biggest memories of our lives.
 
-                Every school event became another adventure.
+Every laugh, every secret, every silly fight...
 
-                Annual Day.
+Slowly created a bond that made our trio special.
 
-                Sports Day.
+`;
 
-                Republic Day.
 
-                Independence Day.
 
-                They weren't just celebrations...
-                they became chapters in our story.
+let index = 0;
 
-            </p>
+let textBox = document.getElementById("text");
 
-            <button class="missionBtn">
 
-                Mission Complete ✓
 
-            </button>
+function typing(){
 
-        </article>
 
-        <article class="missionCard">
+if(index < story.length){
 
-            <div class="level">MISSION 05</div>
 
-            <h2>Rare Meetings</h2>
+textBox.innerHTML += story.charAt(index);
 
-            <p>
 
-                Life became busy.
+index++;
 
-                Different schedules.
 
-                Different responsibilities.
+setTimeout(typing,40);
 
-                Yet every time we meet,
-                it feels as if we were never apart.
 
-            </p>
+}
 
-            <button class="missionBtn">
 
-                Mission Complete ✓
+}
 
-            </button>
 
-        </article>
+typing();
 
-        <article class="missionCard">
 
-            <div class="level">MISSION 06</div>
 
-            <h2>Still Together</h2>
 
-            <p>
 
-                Time changed many things.
+// Continue Music
 
-                But it never changed us.
 
-                Distance never defeated our friendship,
-                because true friendships never need constant conversations.
+let music = document.getElementById("music");
 
-            </p>
 
-            <button class="missionBtn">
+let savedTime =
+localStorage.getItem("musicTime");
 
-                Friendship 100% Complete 💙
 
-            </button>
 
-        </article>
+if(savedTime){
 
-    </section>
+music.currentTime =
+parseFloat(savedTime);
 
-    <section class="quoteSection">
+}
 
-        <blockquote>
 
-            "Friendship isn't measured by how often we meet.
-            It's measured by how comfortable silence feels."
 
-        </blockquote>
+music.volume = 0.4;
 
-    </section>
 
-    <nav class="navigationButtons" aria-label="Chapter Navigation">
 
-        <a href="chapter1.html" class="navButton">
+music.play().catch(()=>{
 
-            ← Previous
+console.log("Click required for music");
 
-        </a>
+});
 
-        <a href="chapter3.html" class="navButton">
 
-            Next Chapter →
 
-        </a>
 
-    </nav>
+setInterval(()=>{
 
-</main>
 
-<script src="../script.js"></script>
+localStorage.setItem(
+
+"musicTime",
+
+music.currentTime
+
+);
+
+
+},1000);
+
+
+
+</script>
+
 
 </body>
 

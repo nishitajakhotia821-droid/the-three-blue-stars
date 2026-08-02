@@ -3,550 +3,325 @@
 
 <head>
 
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+<title>Chapter 6 - Forever Friends</title>
 
-    <meta name="description"
-        content="Final Chapter - The Three Blue Stars. A celebration of friendship that will last forever.">
-
-    <title>Final Chapter | The Three Blue Stars</title>
-
-    <link rel="stylesheet"
-        href="../style.css">
-
-    <link rel="preconnect"
-        href="https://fonts.googleapis.com">
-
-    <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
 </head>
 
+
 <body>
+    <iframe src="music.html" style="display:none;"></iframe>
 
-<main class="chapter-page final-page">
+<div class="stars"></div>
+<div class="stars2"></div>
+<div class="overlay"></div>
 
-<!-- ========================= -->
-<!-- BACK -->
-<!-- ========================= -->
 
-<nav class="back-home">
 
-<a href="../index.html">
+<!-- Sakura -->
 
-← Return To Galaxy
+<div class="sakura" style="left:10%;animation-duration:8s;">🌸</div>
+<div class="sakura" style="left:25%;animation-duration:10s;">🌸</div>
+<div class="sakura" style="left:45%;animation-duration:7s;">🌸</div>
+<div class="sakura" style="left:65%;animation-duration:11s;">🌸</div>
+<div class="sakura" style="left:85%;animation-duration:9s;">🌸</div>
 
-</a>
 
-</nav>
 
-<!-- ========================= -->
-<!-- HERO -->
-<!-- ========================= -->
 
-<header class="chapterHero">
+<audio id="music" loop>
 
-<h3>
+<source src="music.mp3" type="audio/mp3">
 
-FINAL CHAPTER
+</audio>
 
-</h3>
 
-<h1>
 
-THE END...
 
-</h1>
+<div class="container">
 
-<h2>
 
-Or Maybe...
+<h1 class="title">
 
-Just The Beginning.
-
-</h2>
-
-</header>
-
-<!-- ========================= -->
-<!-- INTRO -->
-<!-- ========================= -->
-
-<section class="glass">
-
-<h2>
-
-The Final Save Point
-
-</h2>
-
-<p>
-
-Every great story eventually reaches its final chapter.
-
-Not because the adventure is over...
-
-but because a new adventure is about to begin.
-
-</p>
-
-<p>
-
-From one classroom...
-
-to growing up...
-
-to chasing dreams...
-
-we never realized that the greatest achievement wasn't good marks.
-
-It was finding each other.
-
-</p>
-
-<p>
-
-Years will pass.
-
-Jobs will change.
-
-Cities may change.
-
-Phones may change.
-
-Even our hairstyles will probably change.
-
-But hopefully...
-
-our friendship never will.
-
-</p>
-
-</section>
-
-<!-- ========================= -->
-<!-- FRIENDSHIP CERTIFICATE -->
-<!-- ========================= -->
-
-<section class="certificate">
-
-<div class="certificateCard">
-
-<h1>
-
-🏆
+Chapter 6
 
 </h1>
 
-<h2>
 
-Official Friendship Certificate
+
+<h2 class="subtitle">
+
+The Promise
 
 </h2>
 
-<h3>
 
-Awarded To
 
-</h3>
 
-<h1 class="friends">
+<p class="final-text" id="text"></p>
 
-💙 Nishita
+
+
+
+<!-- Vintage Letter -->
+
+<div class="envelope" onclick="openLetter()">
+  <div class="flap"></div>
+  <div class="seal"></div>
+  <div class="letter">
+    <h2>Dear Govind & Harsh ❤️</h2>
+    <p>
+      From Standard 6 to Third Year...<br><br>
+      Who knew three different people would create a bond full of laughter, memories and endless moments.<br><br>
+      Thank you for every crazy moment, every fight, every laugh, and every memory.<br><br>
+      No matter where life takes us, our trio will always remain special.<br><br>
+      Forever Friends 🌸
+    </p>
+  </div>
+</div>
+
+
+
+
+
+<!-- Anime Ending Image -->
+
+
+<div class="anime-friends">
+
+
+<img src="friends-anime.png" alt="Forever Trio">
+
+
+<h2>
+Forever Trio ❤️
+</h2>
+
+
+<p>
+
+One girl.
+
+Two boys.
+
+Three different paths.
 
 <br>
 
-💙 Govind
-
-<br>
-
-💙 Harsh
-
-</h1>
-
-<p>
-
-For successfully completing the greatest adventure—
-
-Friendship.
+One unforgettable friendship.
 
 </p>
 
-<p>
-
-Achievements Unlocked
-
-</p>
-
-<ul class="certificateList">
-
-<li>⭐ Best Friends Forever</li>
-
-<li>⭐ Countless Laughs Shared</li>
-
-<li>⭐ Secrets Successfully Protected</li>
-
-<li>⭐ Trust Level: Infinite</li>
-
-<li>⭐ Distance Cannot Defeat Friendship</li>
-
-<li>⭐ Since Class VI</li>
-
-</ul>
-
-<h2>
-
-Friendship Rank
-
-</h2>
-
-<h1>
-
-∞ LEGENDARY ∞
-
-</h1>
-
-<p>
-
-Issued on
-
-Friendship Day
-
-With Unlimited Love 💙
-
-</p>
-
-<button id="downloadCertificate">
-
-📜 Download Certificate
-
-</button>
 
 </div>
 
-</section>
 
-<!-- ========================= -->
-<!-- PERSONAL LETTER -->
-<!-- ========================= -->
 
-<section class="glass">
 
-<h2>
 
-A Letter I'll Always Mean
+<div class="end-title">
 
-</h2>
+Happy Friendship Day ❤️
 
-<p>
+</div>
 
-Dear Govind and Harsh,
 
-</p>
 
-<p>
+<br>
 
-People often ask,
 
-"What was the best part of school?"
+<button onclick="finish()">
 
-Some remember exams.
+The End
 
-Some remember teachers.
+</button>
 
-Some remember annual days.
 
-But when I think about school...
 
-I think about both of you.
+</div>
 
-</p>
 
-<p>
 
-Thank you for every laugh.
 
-Every random conversation.
 
-Every inside joke.
 
-Every moment where life felt lighter simply because you were there.
 
-</p>
+<script>
 
-<p>
 
-If I could restart life like an anime...
+// Final Story
 
-I'd still choose the same classroom.
 
-Because that's where I found my two best friends.
+const story = `
 
-</p>
+Three paths...
 
-<p class="signature">
+Three dreams...
 
-— Nishita 💙
+One friendship.
 
-</p>
+Like characters walking through different journeys,
 
-</section>
+we are creating our own stories.
 
-<!-- ========================= -->
-<!-- COUNTDOWN -->
-<!-- ========================= -->
+Life may take us to different places.
 
-<section class="glass countdownBox">
+New challenges.
 
-    <h2>
+New experiences.
 
-        Until We Meet Again...
+But the memories we created together
 
-    </h2>
+will always remain our strongest bond.
 
-    <div id="countdown">
+From Standard 6...
 
-        <div class="timeBox">
+to Third Year...
 
-            <span id="days">00</span>
+This is not the end.
 
-            <small>Days</small>
+This is just another chapter
 
-        </div>
+of our forever story.
 
-        <div class="timeBox">
+`;
 
-            <span id="hours">00</span>
 
-            <small>Hours</small>
 
-        </div>
+let index = 0;
 
-        <div class="timeBox">
+let textBox =
+document.getElementById("text");
 
-            <span id="minutes">00</span>
 
-            <small>Minutes</small>
 
-        </div>
+function typing(){
 
-        <div class="timeBox">
 
-            <span id="seconds">00</span>
+if(index < story.length){
 
-            <small>Seconds</small>
 
-        </div>
+textBox.innerHTML += story.charAt(index);
 
-    </div>
 
-    <p>
+index++;
 
-        Until our next tradition...
 
-        <br><br>
+setTimeout(typing,40);
 
-        🇮🇳 15 August
 
-        <br>
+}
 
-        &
 
-        <br>
+}
 
-        🇮🇳 26 January
 
-        <br><br>
+typing();
 
-        No matter how much time passes,
 
-        these days will always remind us of our school memories.
 
-    </p>
 
-</section>
 
-<!-- ========================= -->
-<!-- FRIENDSHIP PROMISE -->
-<!-- ========================= -->
+// Open Letter
 
-<section class="glass">
 
-    <h2>
+function openLetter(){
 
-        Our Promise
 
-    </h2>
+document
+.querySelector(".envelope")
+.classList.add("open");
 
-    <p>
 
-        We promise...
+}
 
-    </p>
 
-    <p>
 
-        To never let distance become a reason to forget each other.
 
-    </p>
 
-    <p>
 
-        To always laugh at our old memories,
+// Music Restore
 
-        even after many years.
 
-    </p>
+let music =
+document.getElementById("music");
 
-    <p>
 
-        To always answer the call,
+let savedTime =
+localStorage.getItem("musicTime");
 
-        especially when one of us needs the others.
 
-    </p>
 
-    <p>
+if(savedTime){
 
-        And no matter where life takes us,
+music.currentTime =
+parseFloat(savedTime);
 
-        we'll always have one place called...
+}
 
-    </p>
 
-    <h2>
 
-        Friendship.
+music.volume = 0.4;
 
-    </h2>
 
-</section>
 
-<!-- ========================= -->
-<!-- FINAL QUOTE -->
-<!-- ========================= -->
+music.play().catch(()=>{
 
-<section class="quoteSection">
+console.log("Music waiting");
 
-    <blockquote>
+});
 
-        "Some people become classmates.
 
-        Some become friends.
 
-        Very few become family.
 
-        Thank you for becoming mine."
 
-    </blockquote>
+// Ending
 
-</section>
 
-<!-- ========================= -->
-<!-- CREDITS -->
-<!-- ========================= -->
+function finish(){
 
-<section class="credits">
 
-    <h3>
+music.volume = 0.2;
 
-        Created With ❤️
 
-    </h3>
+setTimeout(()=>{
 
-    <h1>
+music.pause();
 
-        By Nishita
 
-    </h1>
+},3000);
 
-    <p>
 
-        Thank you, Govind and Harsh,
 
-        for making my school life one of the happiest chapters of my life.
+document.body.style.transition="2s";
 
-    </p>
+document.body.style.opacity="0";
 
-    <p>
 
-        Happy Friendship Day 💙
 
-    </p>
+setTimeout(()=>{
 
-</section>
 
-<!-- ========================= -->
-<!-- END SCREEN -->
-<!-- ========================= -->
+alert(
+"From Standard 6 to Third Year ❤️\n\nForever Trio"
+);
 
-<section class="endingScreen">
 
-    <h1>
 
-        ✨
+},2000);
 
-        <br>
 
-        Nishita
+}
 
-        <br>
 
-        💙
 
-        <br>
+</script>
 
-        Govind
 
-        <br>
-
-        💙
-
-        <br>
-
-        Harsh
-
-        <br>
-
-        ✨
-
-    </h1>
-
-    <h2>
-
-        THE THREE BLUE STARS
-
-    </h2>
-
-    <p>
-
-        Class VI...
-
-        was only the first chapter.
-
-        Our friendship is the story that never ends.
-
-    </p>
-
-    <p>
-
-        See you on our next adventure.
-
-    </p>
-
-</section>
-
-</main>
-
-<canvas id="fireworks"></canvas>
-
-<script src="../script.js"></script>
 
 </body>
 

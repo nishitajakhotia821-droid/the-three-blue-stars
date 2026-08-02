@@ -3,234 +3,210 @@
 
 <head>
 
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 3 - Growing Together</title>
 
-    <meta name="description"
-        content="Chapter 3 - The Hidden Boss. A heartfelt chapter about trust, difficult moments, and a friendship that remained constant through every season of life.">
-
-    <title>Chapter 3 | The Hidden Boss | The Three Blue Stars</title>
-
-    <link rel="stylesheet" href="../style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
 </head>
 
+
 <body>
+    <iframe src="music.html" style="display:none;"></iframe>
 
-<main class="chapter-page">
 
-    <nav class="back-home" aria-label="Back Navigation">
+<div class="stars"></div>
+<div class="stars2"></div>
+<div class="overlay"></div>
 
-        <a href="../index.html">
 
-            ← Return to Galaxy
 
-        </a>
+<audio id="music" loop>
 
-    </nav>
+<source src="music.mp3" type="audio/mp3">
 
-    <header class="chapterHero">
+</audio>
 
-        <h3>CHAPTER 03</h3>
 
-        <h1>THE HIDDEN BOSS</h1>
 
-        <h2>The Battles Nobody Else Saw</h2>
 
-    </header>
+<div class="container">
 
-    <section class="emotionalSection">
 
-        <div class="glass">
+<h1 class="title">
 
-            <h2>Some Stories Stay Between Friends</h2>
+Chapter 3
 
-            <p>
+</h1>
 
-                Every person fights battles that the world never sees.
 
-                There are days filled with smiles,
 
-                and there are days filled with silence.
+<h2 class="subtitle">
 
-                Through every chapter of life,
+Growing Together
 
-                true friendship quietly stands beside us.
+</h2>
 
-            </p>
 
-            <p>
 
-                We grew together.
 
-                We laughed together.
+<p class="story" id="text"></p>
 
-                We worried together.
 
-                And even during moments when words weren't enough,
 
-                simply knowing you both were there made everything feel lighter.
+<br><br>
 
-            </p>
 
-            <p>
 
-                Not every memory needs to be shared with the world.
+<a href="chapter4.html">
 
-                Some memories belong only to the people who lived them.
+<button>
 
-                That's what makes them special.
+Continue →
 
-            </p>
+</button>
 
-        </div>
+</a>
 
-    </section>
 
-    <section class="letterSection">
 
-        <article class="letter">
+</div>
 
-            <h2>A Letter From Me 💙</h2>
 
-            <p>
 
-                Dear Govind and Harsh,
 
-            </p>
 
-            <p>
 
-                Thank you for becoming more than classmates.
+<script>
 
-                Thank you for becoming family.
 
-                School gave us many lessons,
+const story = `
 
-                but the greatest lesson it gave me was the value of true friendship.
+Time kept moving...
 
-            </p>
+We were no longer the same kids
 
-            <p>
+who met in Standard 6.
 
-                No matter how much time passes,
+We started discovering ourselves.
 
-                no matter where life takes us,
+Our dreams.
 
-                I hope we always find time to laugh together,
+Our goals.
 
-                remember old memories,
+Our future.
 
-                and create new ones.
+Three different journeys...
 
-            </p>
+Three different personalities...
 
-            <p>
+But one strong bond.
 
-                If I had the chance to relive my school life,
+We celebrated each other's victories,
 
-                I wouldn't change a single thing,
+stood together during difficult times,
 
-                because it gave me both of you.
+and learned that true friendship
 
-            </p>
+is not about being together every day...
 
-            <p class="signature">
+It is about knowing
 
-                — Nishita 💙
+someone will always be there.
 
-            </p>
+`;
 
-        </article>
 
-    </section>
 
-    <section class="promiseSection">
+let index = 0;
 
-        <div class="glass">
+let textBox = document.getElementById("text");
 
-            <h2>Our Promise</h2>
 
-            <div class="promiseGrid">
 
-                <article class="promiseCard">
+function typing(){
 
-                    <h3>🤝 Trust</h3>
 
-                    <p>
-                        No matter what happens,
-                        we will always trust each other.
-                    </p>
+if(index < story.length){
 
-                </article>
 
-                <article class="promiseCard">
+textBox.innerHTML += story.charAt(index);
 
-                    <h3>😂 Laughter</h3>
 
-                    <p>
-                        We promise to never stop laughing
-                        at the memories we've created together.
-                    </p>
+index++;
 
-                </article>
 
-                <article class="promiseCard">
+setTimeout(typing,40);
 
-                    <h3>📞 Always There</h3>
 
-                    <p>
-                        Whether it's a happy day
-                        or a difficult one,
-                        we'll always be just one call away.
-                    </p>
+}
 
-                </article>
 
-            </div>
+}
 
-        </div>
 
-    </section>
 
-    <section class="quoteSection">
+typing();
 
-        <blockquote>
 
-            "Some friendships aren't written in books.
-            They're written in hearts."
 
-        </blockquote>
 
-    </section>
 
-    <nav class="navigationButtons" aria-label="Chapter Navigation">
 
-        <a href="chapter2.html" class="navButton">
+// Music Continue
 
-            ← Previous
 
-        </a>
+let music = document.getElementById("music");
 
-        <a href="chapter4.html" class="navButton">
 
-            Next Chapter →
+let savedTime =
+localStorage.getItem("musicTime");
 
-        </a>
 
-    </nav>
 
-</main>
+if(savedTime){
 
-<script src="../script.js"></script>
+music.currentTime =
+parseFloat(savedTime);
+
+}
+
+
+
+music.volume = 0.4;
+
+
+
+music.play().catch(()=>{
+
+console.log("Music waiting for permission");
+
+});
+
+
+
+
+
+setInterval(()=>{
+
+
+localStorage.setItem(
+
+"musicTime",
+
+music.currentTime
+
+);
+
+
+},1000);
+
+
+
+</script>
+
 
 </body>
 
