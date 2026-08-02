@@ -128,7 +128,7 @@ if (startBtn) {
 
     startBtn.addEventListener("click", () => {
 
-        window.location.href = "pages/chapter1.html";
+        window.location.href = "chapter1.html";
 
     });
 
