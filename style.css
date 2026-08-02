@@ -442,8 +442,9 @@ HERO SECTION
     #60a5fa,
     #2563eb);
 
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
     text-shadow:
 
@@ -901,9 +902,10 @@ CHAPTER HERO
 
     background:linear-gradient(90deg,#fff,#7dd3fc,#60a5fa);
 
-    -webkit-background-clip:text;
+    background-clip: text;
+    -webkit-background-clip: text;
 
-    -webkit-text-fill-color:transparent;
+    -webkit-text-fill-color: transparent;
 
 }
 
@@ -1752,8 +1754,9 @@ ENDING SCREEN
     #7dd3fc,
     #60a5fa);
 
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 }
 
@@ -1792,7 +1795,7 @@ FIREWORKS
 
     pointer-events:none;
 
-    z-index:999;
+    z-index:1;
 
 }
 
